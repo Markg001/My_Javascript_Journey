@@ -6,7 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <script src="index.js"></script><!--Best Practice to put the a script-->
+    <button id="Hi">Click</button>
+    <script>
+        document.getElementById("Hi").addEventListener("click", function() {alert("Hello Viewer")})
+    </script>
 </body>
 </html>
