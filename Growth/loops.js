@@ -43,3 +43,27 @@ for(i=1;i<=n;i++)
     }   
     console.log(row)
 }
+console.log('------------Mastering Loops----------')
+// print a box with no middle section use k for row and m for column and x for number
+let k;
+let x = 20;
+for(k=0;k<x;k++)
+{
+    row = "";
+    let m;
+    for(m=0;m<x;m++)
+    {
+        if(k==0 || k==x-1 || m==0 || m ==x-1 || m== Math.floor(x/2) || k== Math.floor(x/2) || k==m || k+m ==x-1 || k+m == Math.floor(x/2) 
+        || k-m == Math.floor(x/2) || k+m== (x-1) + Math.floor(x/2) || m-k== Math.floor(x/2))
+        {
+            row = row + "*";
+        }
+        else
+        {
+            row = row + " ";
+        }
+    }
+    console.log(row);
+}
+
+
