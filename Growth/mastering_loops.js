@@ -65,7 +65,8 @@ for(b=1;b<=n;b++)
     a = " "
     for(i=1;i<=n;i++)
     {
-        if(i == n || b == n || b ==1 || i == 1 || i==10 || b == 10 || b==i || b+i==n)
+        if(i == n || b == n || b ==1 || i == 1 || i==10 || b == 10 || b==i || b+i==n || b+i==Math.floor(n/2)
+        || i-b==Math.floor(n/2) || b-i==Math.floor(n/2) || (b+i)==n +Math.floor(n/2))
         {
             a = a + "*";
         }
