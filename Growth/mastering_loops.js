@@ -79,3 +79,49 @@ for(b=1;b<=n;b++)
     console.log(a);
 }
 console.log("-----------------------Triangle----------------------------------------")
+console.log("-----------------------Triangle----------------------------------------")
+
+// Right-angled triangle
+for(b = 1; b <= n; b++)
+{
+    a = "";
+    for(i = 1; i <= b; i++)
+    {
+        a = a + "*";
+    }
+    console.log(a);
+}
+
+console.log("-----------------------Left-aligned Triangle----------------------------------------")
+
+// Left-aligned triangle (right-angled, aligned right)
+for(b = 1; b <= n; b++)
+{
+    a = "";
+    for(i = 1; i <= (n - b); i++)
+    {
+        a = a + " ";
+    }
+    for(i = 1; i <= b; i++)
+    {
+        a = a + "*";
+    }
+    console.log(a);
+}
+
+console.log("-----------------------Pyramid----------------------------------------")
+
+// Centered Pyramid
+for(b = 1; b <= n; b++)
+{
+    a = "";
+    for(i = 1; i <= (n - b); i++)
+    {
+        a = a + " ";
+    }
+    for(i = 1; i <= (2 * b - 1); i++)
+    {
+        a = a + "*";
+    }
+    console.log(a);
+}
