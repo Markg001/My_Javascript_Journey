@@ -79,9 +79,7 @@ for(b=1;b<=n;b++)
     console.log(a);
 }
 console.log("-----------------------Triangle----------------------------------------")
-console.log("-----------------------Triangle----------------------------------------")
 
-// Right-angled triangle
 for(b = 1; b <= n; b++)
 {
     a = "";
