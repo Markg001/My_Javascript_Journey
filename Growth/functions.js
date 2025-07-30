@@ -44,3 +44,32 @@ function add(x,y)
 //or
 let res = add(100,200);
 console.log(res)
+
+// Why do we need functions 
+//example
+function studGrade(studentMax,totalMax)
+{
+    let totalPercentage= (studentMax/totalMax)*100
+    if(studentMax>=90)
+    {
+        totalPercentage = 'A'
+    }
+    else if(studentMax>=80)
+    {
+        totalPercentage = 'B'
+    }
+    else if(studentMax>=70)
+    {
+        totalPercentage = 'C'
+    }
+    else if(studentMax>=60)
+    {
+        totalPercentage = 'D'
+    }
+    else if(studentMax<=50)
+    {
+        totalPercentage = 'F'
+    }
+    console.log(totalPercentage)
+}
+studGrade(67,100)
