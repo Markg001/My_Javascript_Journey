@@ -1,5 +1,5 @@
 // Understanding scope
-// 
+// NESTED FUNCTIONF
 let userName = 'Mark';
 let userRole = 'Admin'
 
@@ -16,12 +16,12 @@ Access();
 
 let firstName =  'kim';
 
-function outer(){
+function outer(){// Outer function  will have access to the globla scope but no access to innerscope
     let outer = 'Kimeria'
     console.log(outer);
     console.log(inner);
     console.log(firstName);
-    function inner(){
+    function inner(){//  Inner function does have access to only what is within the function  but doesnt have access to outerfunction and global scope
         let inner =  'Kagumba';
         console.log(inner);
         console.log(firstName);
@@ -30,3 +30,4 @@ function outer(){
     inner();
 };
 outer();
+
